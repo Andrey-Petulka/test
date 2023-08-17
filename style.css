@@ -1,217 +1,492 @@
-body {
-  background-color: white;
-  margin: 0px;
+/*Базовые стили*/
+html {
+  height: 100vh;
+}
 
-  font-family: "Oswald", sans-serif;
-  font-family: "Source Sans 3", sans-serif;
-  font-weight: normal;
+body {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  min-height: 100%;
+  color: #0c4466;
+}
+
+li {
+  list-style: none;
 }
 
 a {
   text-decoration: none;
-  color: #607ce6;
+  color: #0c4466;
+  font-weight: 500;
 }
 
-li {
-  list-style-type: none;
+p {
+  word-wrap: break-word;
 }
 
-section {
-  margin-top: 80px;
+/*SVG картинки*/
+
+.svg_1 {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/*Шапка страницы*/
-
-.mail {
-  text-align: end;
-  padding-right: 20px;
+.svg_2 {
+  margin-left: auto;
 }
 
-.mail a {
-  text-decoration: underline;
-  text-decoration-color: #607ce6;
-}
-
-.phone {
-  text-align: end;
-}
-
-.list_navigation {
-  height: inherit;
-  display: flex;
-  justify-content: space-between;
-
-  align-items: center;
-  text-align: center;
-  margin: auto;
-
-  width: 1180px;
-  border-top: 1px solid blue;
-  padding: 16px 0px 10px 0px;
-}
-
-.contacts {
-  display: flex;
-  justify-content: center;
-}
-
-.navigation {
-  padding-top: 32px;
-  display: flex;
-  align-items: end;
-  margin: auto;
-  align-content: flex-start;
-}
-
-/*Российский завод силовых машин*/
-
-.heading {
-  font-size: 60px;
-  font-weight: 700;
-}
-.power_machine {
-  display: grid;
-  grid-template-columns: 580px 380px;
-  justify-content: center;
-  width: 1180px;
-  margin: auto;
-}
-
-/*О предприятии*/
-
-.pioner {
-  font-size: 16px;
-  margin-bottom: 32px;
-}
-
-.nomenclature {
-  padding-top: 100px;
-}
-
-.factory {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-
-  width: 1180px;
-  margin: auto;
-}
-
-/*Магазин*/
-.products {
-  display: grid;
-  grid-template-columns: 380px 380px 380px;
-  justify-content: center;
-  gap: 20px;
-}
-
-.representative_office {
-  display: grid;
-  justify-content: start;
-  width: 1180px;
-  margin: auto;
-}
+/*Центрирование*/
 
 .conteiner {
-  width: 380px;
-  height: 435px;
-  background-color: #f5f5f5;
-}
-
-.product {
-  margin-top: 32px;
-  margin-left: 24px;
-}
-
-.product_2 {
-  margin-top: 55px;
-}
-
-.conteiner h3 {
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 600;
-
-  padding-left: 24px;
-  margin-bottom: 12px;
-}
-
-.conteiner a {
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-
-  padding-left: 24px;
-  margin-bottom: 32px;
-}
-
-/*Новости*/
-.news {
   display: grid;
-  grid-template-columns: 380px 380px 380px;
   justify-content: center;
-  width: 1180px;
-  margin: auto;
+}
+
+/*Шапка*/
+
+header {
+  background: #c0f0e0;
+  box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.07);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navigation_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: 500;
   gap: 20px;
+  color: #0c4466;
+  margin-right: 47px;
 }
 
-.section_title {
-  font-size: 48px;
-  margin-bottom: 32px;
+.logo {
+  margin-right: 3px;
 }
 
-.card {
-  width: 380px;
-  background-color: #f5f5f5;
+.city {
+  color: #0c4466;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.network {
+  width: 30px;
+}
+
+.network_conteiner {
+  margin-right: 43px;
+}
+
+.contacts_conteiner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: -15px;
+}
+
+.phone_contacts {
+  width: 22px;
+  margin: 0px;
+  margin-bottom: -5px;
+  margin-right: 4px;
+}
+
+.button {
+  width: 250px;
+  margin-top: 5px;
+  margin-bottom: 14px;
+  padding: 15px 26px 15px 30px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  background: #78c093;
+
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*Первый экран*/
+
+h1 {
+  font-size: 40px;
+  line-height: 55px;
+}
+
+.section_1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.lainer {
+  width: 513px;
+}
+
+.lainer_description {
+  width: 400px;
+}
+
+.reception {
+  width: 250px;
+  margin-top: 5px;
+  margin-bottom: 14px;
+  padding: 15px 26px 15px 30px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  background: #78c093;
+
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: 0px 15px 5px -5px rgba(0, 0, 0, 0.2);
+}
+
+.coneiner_title {
+  width: 50%;
+}
+
+.conteiner_image {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.row_2 {
+  margin-top: -262px;
+  margin-left: 15px;
+}
+
+.image_3 {
+  margin: -150px;
+  margin-left: -120px;
+  margin-bottom: -53px;
+  z-index: 5;
+}
+
+.tooth-1 {
+  margin-left: 210px;
+}
+
+.tooth-1 {
+  margin-top: 50px;
 }
 
 .text {
   font-size: 20px;
 }
 
-.photo {
-  padding: 0px;
+.svg_screensaver {
+  padding-top: 50px;
+  display: none;
 }
 
-.text_card {
-  padding: 16px 0px 16px 16px;
+.conteiner_image {
+  align-items: center;
 }
 
-time {
-  margin-right: 16px;
-  margin-bottom: 24px;
+.screensaver {
+  background: #fff6ec;
+  padding: 20px 92px 0px 137px;
+}
+
+/*Услуги*/
+
+h2 {
+  font-size: 40px;
+}
+
+.service_container {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 215px;
+  border-radius: 20px;
+  background: #fff6ec;
+  text-align: center;
+  padding: 15px 11px;
+}
+
+.clinic {
+  padding: 53px 140px 151px 140px;
+}
+
+.about {
+  margin-bottom: 39px;
+}
+
+/*Все о нас*/
+.conteiner_photo_2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.conteiner_photo {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about_container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.we {
+  background: #fff6ec;
+  display: flex;
+  align-items: center;
+  padding-top: 61px;
+  padding-bottom: 76px;
+}
+
+.about_image {
+  border-radius: 30px;
+}
+
+.about_description {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
+}
+
+/*Почему выбирают именно нашу клинику?*/
+
+.our_clinic {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.container_preperties {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.advantages_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.galari {
+  margin-top: 200px;
+}
+
+.who {
+  width: 70%;
+}
+
+.equipment_container {
+  border-radius: 20px;
+  background-color: #c0f0e0;
+  padding: 11px 8px 20px 34px;
+  width: 700px;
+}
+
+.record {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text_record {
+  width: 100%;
+  margin-top: 37px;
+}
+
+.free {
+  margin-left: 50%;
+}
+
+/*Наша команда*/
+.command_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 67px 200px 126px 200px;
+}
+
+.doctors_conteiner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.photo_doctor {
+  z-index: -1;
+}
+
+.profession {
+  width: 180px;
+}
+
+.svg_10 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.photo_doctor {
+  width: 179px;
+  border: 3px solid #7ac195;
+  padding: 8px 8px 0px 8px;
+  margin-top: 8px;
+}
+.photo_row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 60px;
+  margin-top: 20px;
+}
+
+.photo_conteiner {
+  width: 192px;
+}
+
+/*Текст в карточке с доктором*/
+
+.doctor_decription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -125px;
+  margin-left: 40px;
+}
+
+.profession_conteiner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.name_doctor {
+  width: 190px;
+
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+.arrow {
+  width: 32px;
+  height: 10px;
+}
+
+.profession {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 10px 2px 40px;
+}
+/*Блок с картой*/
+
+.schema_pass {
+  display: flex;
+  padding-bottom: 140px;
+  flex-wrap: wrap;
+}
+
+.location {
+  width: 570px;
+  margin-right: 28px;
+  word-wrap: break-word;
+}
+
+.map {
+  box-shadow: 0px 3px 5px 0px grey;
+  background: #fff6ec;
+}
+
+.vk_link {
+  display: flex;
+  align-items: center;
+}
+
+.vk_link_icon {
+  width: 28px;
+  height: 28px;
+  margin-left: 5px;
 }
 
 /*Подвал*/
+
 footer {
-  margin-top: 80px;
-  background-color: #333;
-  color: white;
+  background: #c0f0e0;
+  padding: 40px 150px 28px 150px;
 }
 
-.list_group {
+.documents {
   display: flex;
-  justify-content: flex-end;
-  width: 1000px;
-  margin: auto;
-  margin-top: 56px;
-  margin-bottom: 0px;
-}
-
-.list_items {
-  width: 150px;
-  line-height: 200%;
-}
-
-.year {
-  width: 200px;
-  margin: auto;
-  padding-bottom: 24px;
-  margin-top: 74px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .logo_footer {
-  position: relative;
-  left: 250px;
-  top: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.adress_footer {
+  width: 160px;
+  font-size: 16px;
+}
+
+.network_footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.network_footer_icon {
+  width: 30px;
+}
+
+.phone_image {
+  width: 22px;
+  margin-right: 4px;
+  margin-bottom: -4px;
+}
+
+.contacts_footer_conteiner {
+  margin-left: 42px;
 }
