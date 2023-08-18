@@ -1,5 +1,7 @@
 /*Это новый файл*/
 
+/*Вношу правки*/
+
 /*Базовые стили*/
 html {
   height: 100vh;
@@ -78,6 +80,7 @@ header {
   color: #0c4466;
   font-weight: 500;
   font-style: normal;
+  width: 200px;
 }
 
 .address {
